@@ -8,7 +8,7 @@ class AppTheme {
     color: Colors.black,
   );
 
-  static TextStyle get optionLabelStyle => GoogleFonts.poppins(
+  static TextStyle get accountOptionStyle => GoogleFonts.poppins(
     fontSize: 24,
     fontWeight: FontWeight.w700,
     color: Colors.white,
