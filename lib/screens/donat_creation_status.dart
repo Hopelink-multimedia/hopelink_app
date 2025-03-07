@@ -4,8 +4,8 @@ import 'package:google_fonts/google_fonts.dart';
 import '../widgets/continue_button.dart';
 import 'home_screen.dart';
 
-class SuccessScreen extends StatelessWidget {
-  const SuccessScreen({Key? key}) : super(key: key);
+class DonarSuccessScreen extends StatelessWidget {
+  const DonarSuccessScreen({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -38,7 +38,7 @@ class SuccessScreen extends StatelessWidget {
                             const SizedBox(height: 60),
                             // Success Message
                             Text(
-                              'SUCCESSFULLY CREATED \n YOUR ACCOUNT',
+                              ' CONGRATULATIONS!\n!SUCCESSFULLY REGISTERED\nAS DONOR',
                               textAlign: TextAlign.center,
                               style: TextStyle(
                                 color: Color(0xFF3CEC56),
@@ -58,15 +58,15 @@ class SuccessScreen extends StatelessWidget {
 
               SizedBox(height: 40),
               Center(
-                    child: ContinueButton(
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (context) => HomeScreen()), // Replace with your destination screen
-                        );
-                      },
-                    ),
+                child: ContinueButton(
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()), // Replace with your destination screen
+                    );
+                  },
                 ),
+              ),
             ],
           ),
         ),
